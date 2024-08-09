@@ -1,6 +1,6 @@
 import spacy
 from nltk.sentiment import SentimentIntensityAnalyzer
-from aspect_keywords import aspect_keywords  # 确保根据你的文件结构调整此导入
+from aspect_sentences.aspect_keywords.aspect_keywords import aspect_keywords  # 确保根据你的文件结构调整此导入
 
 # 初始化NLP模型和情感分析器
 nlp = spacy.load('en_core_web_sm')

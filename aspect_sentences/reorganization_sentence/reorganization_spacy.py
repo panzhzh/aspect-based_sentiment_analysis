@@ -1,5 +1,5 @@
 import spacy
-from aspect_keywords import aspect_keywords  # Import the aspect_keywords dictionary from the external file
+from aspect_sentences.aspect_keywords.aspect_keywords import aspect_keywords  # Import the aspect_keywords dictionary from the external file
 
 # 样本句子
 #sentence = "Good Filipino food! Tortang talong was a winner. Service is good and staff are all friendly. Will come back again to try out other dishes on the menu."

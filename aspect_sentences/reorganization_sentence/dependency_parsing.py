@@ -1,7 +1,7 @@
 import spacy
 from nltk.tokenize import sent_tokenize
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from aspect_keywords import aspect_keywords
+from aspect_sentences.aspect_keywords.aspect_keywords import aspect_keywords
 
 # 加载spaCy的英语模型
 nlp = spacy.load('en_core_web_sm')
@@ -24,7 +24,7 @@ def extract_aspect_phrases(text, aspect_keywords):
                     break
     return aspect_phrases
 
-with open('data.txt', 'r') as f:
+with open('../dataset/data.txt', 'r') as f:
     data = f.readlines()
 
 for line in data:

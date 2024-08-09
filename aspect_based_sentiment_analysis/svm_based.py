@@ -4,7 +4,7 @@ from sklearn.svm import LinearSVC
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from aspect_sentences.aspect_keywords import aspect_keywords, weights
+from aspect_sentences.aspect_keywords.aspect_keywords import aspect_keywords, weights
 import nltk
 
 nltk.download('punkt')
@@ -13,7 +13,7 @@ nltk.download('punkt')
 data = []
 labels = []
 
-with open('../aspect_sentences/data.txt', 'r') as f:
+with open('../aspect_sentences/dataset/data.txt', 'r') as f:
     for line in f:
         text, label = line.strip().split('\t')
         data.append(text)

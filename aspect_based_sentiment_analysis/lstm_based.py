@@ -8,7 +8,7 @@ from keras.preprocessing.sequence import pad_sequences
 data = []
 labels = []
 
-with open('../aspect_sentences/data.txt', 'r') as f:
+with open('../aspect_sentences/dataset/data.txt', 'r') as f:
     for line in f:
         text, label = line.strip().split('\t')
         data.append(text)

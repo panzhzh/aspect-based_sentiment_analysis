@@ -1,6 +1,6 @@
 import stanza
 import spacy
-from aspect_keywords import aspect_keywords  # Import the aspect_keywords dictionary from the external file
+from aspect_sentences.aspect_keywords.aspect_keywords import aspect_keywords  # Import the aspect_keywords dictionary from the external file
 
 # 下载和加载英语模型
 stanza.download('en')

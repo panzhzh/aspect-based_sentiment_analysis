@@ -1,7 +1,7 @@
 import nltk
 from nltk.tokenize import word_tokenize
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from aspect_sentences.aspect_keywords import aspect_keywords, weights
+from aspect_sentences.aspect_keywords.aspect_keywords import aspect_keywords, weights
 
 nltk.download('punkt')
 
@@ -41,7 +41,7 @@ def aspect_based_sentiment(text, aspect_keywords, weights):
     return aspect_sentiments
 
 
-with open('../aspect_sentences/data.txt', 'r') as f:
+with open('../aspect_sentences/dataset/data.txt', 'r') as f:
     data = f.readlines()
 
 for line in data:
